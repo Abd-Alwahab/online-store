@@ -1,0 +1,35 @@
+
+.nav {
+
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem 3rem;
+    box-shadow: 1px 1px 6px $gray;
+
+    &__list {
+        display: flex;
+        align-items: center;
+        list-style: none;
+    }
+
+    &__item {
+        margin-right: 1.3rem;
+    }
+
+
+    &__link {
+        text-decoration: none;
+        color: $light-gray;
+        text-transform: uppercase;
+
+    }
+}
+
+
+
+.logo {
+
+    width: 6rem;
+    height: 4rem;
+    border-radius: 100px;
+}

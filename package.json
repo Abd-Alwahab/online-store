@@ -1,0 +1,23 @@
+{
+  "name": "online-store",
+  "version": "1.0.0",
+  "description": "This is website for an online shopping store",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch:sass": "node-sass css/sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abd-Alwahab/online-store.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Abd-Alwahab/online-store/issues"
+  },
+  "homepage": "https://github.com/Abd-Alwahab/online-store#readme",
+  "dependencies": {
+    "node-sass": "^4.11.0"
+  }
+}
