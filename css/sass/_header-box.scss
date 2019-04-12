@@ -6,7 +6,8 @@
         background-color: $gray;
         display: flex;
         justify-content: space-between;
-        padding: 1rem 4rem;
+        align-items: center;
+        padding: .3rem 4rem;
         box-sizing: border-box;
     }
 
@@ -15,6 +16,7 @@
     }
 
     &__input {
+        min-width: 30rem;
         border: none;
         border-radius: 10px;
         padding: .7rem 2rem;
@@ -23,10 +25,29 @@
 
     &__icon {
 
-        color: $light-black;
+        color: #fff;
         font-size: 2rem;
         margin-right: 1rem;
     }
 
+
+    &__user-nav {
+        display: flex;
+        align-items: center;
+        list-style: none;
+    }
+
+    &__user-item {
+        margin-right: 1.3rem;
+    }
+
+
+    &__user-link {
+        text-decoration: none;
+        color: #fff;
+        text-transform: uppercase;
+        
+        
+    }
 
 }
