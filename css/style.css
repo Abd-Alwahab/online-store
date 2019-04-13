@@ -7,7 +7,7 @@ body {
   display: flex;
   justify-content: space-between;
   padding: .5rem 3rem;
-  box-shadow: 1px 1px 6px #13123b;
+  box-shadow: 1px 1px 6px #dfdfdf;
   background-color: white; }
   .nav__list {
     display: flex;
@@ -17,7 +17,7 @@ body {
     margin-right: 1.3rem; }
   .nav__link {
     text-decoration: none;
-    color: #e7e7e7;
+    color: #dfdfdf;
     text-transform: uppercase;
     font-size: .8rem; }
 
@@ -28,7 +28,7 @@ body {
 
 .header__box {
   width: 100%;
-  background-color: #13123b;
+  background-color: #dfdfdf;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -40,7 +40,7 @@ body {
   border: none;
   border-radius: 10px;
   padding: .7rem 2rem;
-  box-shadow: 3px 3px 0 #13123b; }
+  box-shadow: 3px 3px 0 #dfdfdf; }
 
 .header__icon {
   color: #fff;
@@ -93,40 +93,64 @@ body {
 .btn--orange {
   background-color: orange; }
 
+.btn--margin-top {
+  margin-top: 1.2rem; }
+
+.btn--black {
+  background-color: #000;
+  color: #fff; }
+
 .section {
   padding: 8rem 4rem; }
 
 .reviews {
+  box-sizing: border-box;
+  width: 100%;
   display: flex;
   justify-content: center;
-  padding: 2rem 0;
+  padding: 2rem 1rem;
   border: 1px solid #e7e7e7;
   box-shadow: 1px 1px 5px #e7e7e7;
   border-radius: 5px;
   z-index: 9999;
-  background-color: #fff; }
+  background-color: #fff;
+  flex-wrap: wrap; }
 
-.reviews__left {
-  display: flex;
-  justify-content: center;
-  padding: 0 2rem;
-  height: auto; }
+.review {
+  max-width: 45%;
+  box-shadow: 1px 1px 7px solid #dfdfdf;
+  padding: 1rem .8rem;
+  box-sizing: border-box;
+  border: 1px solid #e7e7e7;
+  margin: 1rem; }
+  .review__user {
+    display: flex; }
+  .review .user__info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 1rem;
+    margin-top: .4rem; }
+  .review__title {
+    margin: 0;
+    color: orange;
+    font-weight: 100; }
+  .review__from {
+    margin-top: .3rem;
+    width: 100%;
+    font-size: .8rem; }
+  .review__icon {
+    margin-right: .3rem;
+    color: orange; }
+  .review .review__description {
+    margin-top: .8rem;
+    line-height: 1.6;
+    color: orange; }
 
 .reviews img {
-  width: 3.5rem;
-  height: 3.5rem;
-  border-radius: 50%; }
-
-.review__user {
-  display: flex;
-  align-items: center;
-  margin: 0; }
-
-.user__info {
-  display: flex;
-  flex-direction: column; }
-
-.review__title {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
   margin: 0; }
 
 .how-its-work {
@@ -209,3 +233,80 @@ body {
     font-size: 1.2rem; }
   .product--vetical p {
     font-size: 1rem; }
+
+.about {
+  padding: 7rem 0; }
+  .about-content {
+    display: flex;
+    justify-content: space-between; }
+  .about-content__img {
+    width: 50%;
+    background: url(../../images/shop--basket.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    margin-right: 3rem;
+    clip-path: polygon(0 0, 100% 0, 70% 100%, 0 100%); }
+    .about-content__img img {
+      width: 100%;
+      height: auto; }
+  .about-content__text {
+    width: 50%;
+    padding-right: 5rem; }
+    .about-content__text h2 {
+      letter-spacing: 1px;
+      color: #000;
+      margin-top: 0;
+      text-transform: uppercase;
+      font-size: 1.7rem; }
+    .about-content__text p {
+      line-height: 1.6;
+      font-size: 1.1rem;
+      color: orange; }
+
+.feature-prodact {
+  display: flex;
+  border: 1px solid #dfdfdf;
+  position: relative;
+  flex-wrap: wrap;
+  box-sizing: border-box; }
+  .feature-prodact__img {
+    max-width: 40%;
+    margin-right: 1rem; }
+    .feature-prodact__img img {
+      width: 100%;
+      display: block; }
+  .feature-prodact__content {
+    max-width: 55%;
+    padding: 1rem 0; }
+  .feature-prodact h5 {
+    font-size: 1.3rem;
+    color: #777;
+    margin-bottom: 0;
+    margin-top: .5rem; }
+  .feature-prodact h3 {
+    margin: 0;
+    color: orange;
+    font-size: 1.7rem;
+    letter-spacing: 1px; }
+  .feature-prodact .free {
+    font-size: .8rem;
+    margin-top: .3rem; }
+  .feature-prodact p {
+    font-size: .9rem;
+    margin-top: .7rem;
+    line-height: 1.6; }
+  .feature-prodact__list {
+    padding: 0 0 0 .5rem;
+    display: flex;
+    width: 50%;
+    flex-wrap: wrap; }
+  .feature-prodact__item {
+    margin: .5rem 1rem; }
+  .feature-prodact__link {
+    text-decoration: none;
+    color: #000; }
+  .feature-prodact .btns {
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    display: block; }
