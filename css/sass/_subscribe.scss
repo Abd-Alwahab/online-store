@@ -1,0 +1,60 @@
+
+.subscribe {
+
+    background-color: rgb(190, 190, 190);
+    background-image:linear-gradient(rgba(0, 0, 0, 0.541),rgba(0, 0, 0, 0.541)), url(../../images/subscribe-image.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: auto;
+    background-position: center;
+    padding: 8rem 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__content {
+
+        border-radius: 5px;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.603);
+        background-color: rgb(218, 218, 218);
+        height: 25rem;
+        min-width: 75%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 2rem;
+    }
+
+
+    &__form {
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.603);
+        background-color: #fff;
+        display: flex;
+        min-width: 70%;
+        align-items: center;
+        padding: 3rem 4rem;
+        border-radius: 5px;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__title {
+
+        margin-bottom: 1.2rem;
+        color: orange;
+        font-size: 2rem;
+        text-transform: uppercase;letter-spacing: 1px;
+        
+    }
+
+
+    &__input {
+        margin-bottom: 2rem;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.603);
+        padding: 1rem 2rem;
+        min-width: 70%;
+    }
+
+}
