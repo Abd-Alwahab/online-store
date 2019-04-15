@@ -1,7 +1,8 @@
 body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif; }
 
 .nav {
   display: flex;
@@ -17,9 +18,10 @@ body {
     margin-right: 1.3rem; }
   .nav__link {
     text-decoration: none;
-    color: #dfdfdf;
+    color: #222;
     text-transform: uppercase;
-    font-size: .8rem; }
+    font-size: .8rem;
+    font-weight: bold; }
 
 .logo {
   width: 4rem;
@@ -40,10 +42,11 @@ body {
   border: none;
   border-radius: 10px;
   padding: .7rem 2rem;
-  box-shadow: 3px 3px 0 #dfdfdf; }
+  box-shadow: 3px 3px 0 #dfdfdf;
+  font-family: 'Roboto', sans-serif; }
 
 .header__icon {
-  color: #fff;
+  color: #222;
   font-size: 2rem;
   margin-right: 1rem; }
 
@@ -57,11 +60,11 @@ body {
 
 .header__user-link {
   text-decoration: none;
-  color: #fff;
+  color: #222;
   text-transform: uppercase; }
 
 .header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.596)), url(../../images/shopping-background.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.596)), url(../images/shopping-background.jpg);
   background-size: cover;
   height: 100vh;
   background-attachment: fixed; }
@@ -74,13 +77,14 @@ body {
   .header__title {
     color: #fff;
     text-transform: uppercase;
-    letter-spacing: 4px;
-    text-shadow: 2px 2px 0 #000; }
+    letter-spacing: 5px;
+    text-shadow: 1px 1px 0 #c9c5c5;
+    font-size: 2rem; }
   .header__description {
     color: #fff;
     text-transform: uppercase;
     font-size: 1rem;
-    margin-bottom: 1rem; }
+    margin-bottom: 2.4rem; }
 
 .btn {
   text-decoration: none;
@@ -89,6 +93,9 @@ body {
   padding: .5rem 1.2rem;
   display: inline-block;
   border-radius: 5px; }
+
+.btn--large-padding {
+  padding: 1.2rem; }
 
 .btn--orange {
   background-color: orange; }
@@ -235,15 +242,16 @@ body {
     font-size: 1rem; }
 
 .about {
-  padding: 7rem 0; }
+  padding: 5rem 0; }
   .about-content {
     display: flex;
     justify-content: space-between; }
   .about-content__img {
     width: 50%;
-    background: url(../../images/shop--basket.jpg);
+    background: url(../images/shopping-background.jpg);
     background-size: cover;
     background-attachment: fixed;
+    background-position: center;
     margin-right: 3rem;
     clip-path: polygon(0 0, 100% 0, 70% 100%, 0 100%); }
     .about-content__img img {

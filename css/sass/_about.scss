@@ -1,7 +1,7 @@
 
 .about {
     
-    padding: 7rem 0;
+    padding: 5rem 0;
 
     &-content {
 
@@ -11,9 +11,10 @@
 
     &-content__img {
         width: 50%;
-        background: url(../../images/shop--basket.jpg);
+        background: url(../images/shopping-background.jpg);
         background-size: cover;
         background-attachment: fixed;
+        background-position: center;
         margin-right: 3rem;
         clip-path: polygon(0 0, 100% 0, 70% 100%, 0 100% );
 

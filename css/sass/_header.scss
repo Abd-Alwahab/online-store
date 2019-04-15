@@ -1,6 +1,6 @@
 .header {
 
-    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.596)),url(../../images/shopping-background.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.596)),url(../images/shopping-background.jpg);
     background-size: cover;
     height: 100vh;
     background-attachment: fixed;
@@ -18,8 +18,9 @@
 
         color: #fff;
         text-transform: uppercase;
-        letter-spacing: 4px;
-        text-shadow: 2px 2px 0 #000;
+        letter-spacing: 5px;
+        text-shadow: 1px 1px 0 rgb(201, 197, 197);
+        font-size: 2rem;
 
     }
 
@@ -27,7 +28,7 @@
         color: #fff;
         text-transform: uppercase;
         font-size: 1rem;
-        margin-bottom: 1rem;
+        margin-bottom: 2.4rem;
     }
 
 
