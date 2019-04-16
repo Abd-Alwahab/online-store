@@ -5,23 +5,50 @@
         width: 100%;
         background-color: $gray;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
         padding: .3rem 4rem;
         box-sizing: border-box;
+
+
+
+        
+        @include for-phone-only {
+            
+            flex-direction: column;
+            padding: 2rem 0;
+        }
+
+        @include for-tab-only {
+            justify-content: space-between;
+            padding: .3rem 1rem;
+        }
+        
+          
     }
 
-    &__form {
 
-    }
+        
+
+
 
     &__input {
-        min-width: 30rem;
+        max-width: 100%;
         border: none;
         border-radius: 10px;
-        padding: .7rem 2rem;
+        padding: .7rem 6rem;
         box-shadow: 3px 3px 0 $gray;
         font-family: 'Roboto', sans-serif;
+
+        @include for-phone-only {
+            margin: 1rem 0;
+           
+        }
+
+        @include for-tab-only {
+            padding: .7rem 2rem;
+            justify-content: space-between;
+        }
     }
 
     &__icon {
@@ -36,6 +63,7 @@
         display: flex;
         align-items: center;
         list-style: none;
+       
     }
 
     &__user-item {

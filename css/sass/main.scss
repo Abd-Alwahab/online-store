@@ -1,5 +1,6 @@
 @import "base";
 @import "variables";
+@import "mixin";
 @import "nav";  
 @import "header-box";
 @import "header";
@@ -11,46 +12,6 @@
 @import "about";
 @import "feature-producat";
 @import "subscribe";
+@import "footer";
 
 
-
-.footer {
-
-    padding: 3rem 2rem;
-    background-color: orange;
-    box-sizing: border-box;
-
-
-    &__nav {
-
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        box-sizing: border-box;
-
-    }
-
-
-    &__list {
-
-        list-style: none;
-        min-width: 25%;
-        box-sizing: border-box;
-
-
-    }
-
-
-    &__item {
-        margin-bottom: 1rem;
-    }
-
-
-    &__link {
-
-        text-decoration: none;
-        font-size: 1.1rem;
-        color: #fff;
-    }
-
-}

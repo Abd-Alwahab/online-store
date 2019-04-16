@@ -32,18 +32,33 @@ body {
   width: 100%;
   background-color: #dfdfdf;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: .3rem 4rem;
   box-sizing: border-box; }
+  @media (max-width: 600px) {
+    .header__box {
+      flex-direction: column;
+      padding: 2rem 0; } }
+  @media (max-width: 900px) {
+    .header__box {
+      justify-content: space-between;
+      padding: .3rem 1rem; } }
 
 .header__input {
-  min-width: 30rem;
+  max-width: 100%;
   border: none;
   border-radius: 10px;
-  padding: .7rem 2rem;
+  padding: .7rem 6rem;
   box-shadow: 3px 3px 0 #dfdfdf;
   font-family: 'Roboto', sans-serif; }
+  @media (max-width: 600px) {
+    .header__input {
+      margin: 1rem 0; } }
+  @media (max-width: 900px) {
+    .header__input {
+      padding: .7rem 2rem;
+      justify-content: space-between; } }
 
 .header__icon {
   color: #222;
@@ -74,6 +89,9 @@ body {
     width: 100%;
     transform: translateY(-50%);
     text-align: center; }
+    @media (max-width: 600px) {
+      .header__content {
+        transform: translateY(0); } }
   .header__title {
     color: #fff;
     text-transform: uppercase;
@@ -115,13 +133,16 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
-  padding: 2rem 1rem;
+  padding: 8rem 4rem;
   border: 1px solid #e7e7e7;
   box-shadow: 1px 1px 5px #e7e7e7;
   border-radius: 5px;
   z-index: 9999;
   background-color: #fff;
   flex-wrap: wrap; }
+  @media (max-width: 900px) {
+    .reviews {
+      padding: 6rem 1rem; } }
 
 .review {
   max-width: 45%;
@@ -130,6 +151,9 @@ body {
   box-sizing: border-box;
   border: 1px solid #e7e7e7;
   margin: 1rem; }
+  @media (max-width: 600px) {
+    .review {
+      max-width: 70%; } }
   .review__user {
     display: flex; }
   .review .user__info {
@@ -167,41 +191,68 @@ body {
   background-color: #fff;
   margin-top: -12rem;
   padding: 4rem 0; }
+  @media (max-width: 600px) {
+    .how-its-work {
+      flex-direction: column;
+      padding: 2rem 0; } }
 
 .how-its-work img {
   width: 8rem;
   height: 8rem; }
+  @media (max-width: 600px) {
+    .how-its-work img {
+      width: 6rem;
+      height: 6rem;
+      margin-bottom: 2rem; } }
 
 .products {
-  display: flex; }
+  display: flex;
+  flex-wrap: wrap; }
+  @media (max-width: 1250px) {
+    .products {
+      flex-direction: column;
+      padding: 2rem 0; } }
   .products i {
-    color: orange; }
+    color: #ffa500; }
 
 .products__horizantal {
   width: 70%;
   display: flex;
   flex-direction: column;
   margin-right: 1rem; }
+  @media (max-width: 1250px) {
+    .products__horizantal {
+      width: 100%;
+      padding: 2rem 0; } }
 
 .products__row--one {
   display: flex; }
+  @media (max-width: 1250px) {
+    .products__row--one {
+      justify-content: center; } }
+  @media (max-width: 1250px) {
+    .products__row--one {
+      flex-wrap: wrap;
+      padding: 0 3rem; } }
 
 .product__row--2 {
   display: flex;
-  padding: 2rem 1.3rem; }
+  padding: 2rem 1.3rem;
+  overflow: hidden; }
+  @media (max-width: 600px) {
+    .product__row--2 {
+      margin: 1rem 0;
+      flex-direction: column; } }
   .product__row--2 img {
+    width: 100%;
     max-height: 20rem; }
 
 .prodcut__two--content {
-  padding: 1.4rem; }
-
-.producats__vertical {
-  display: flex;
-  flex-direction: column;
-  width: 25%; }
+  padding: 1.4rem;
+  overflow: hidden; }
 
 .product {
-  padding: .5rem 1rem;
+  padding: 1rem 1rem;
   margin: 0 1rem;
   overflow: hidden;
   position: relative;
@@ -214,6 +265,7 @@ body {
     font-size: 1.4rem;
     color: orange; }
   .product--img {
+    width: 100%;
     margin: 0 auto;
     position: absolute;
     z-index: 9;
@@ -230,7 +282,26 @@ body {
     line-height: 1.4; }
 
 .product--row--one {
+  min-width: 25%; }
+  @media (max-width: 1250px) {
+    .product--row--one {
+      margin: 1rem 0; } }
+
+.producats__vertical {
+  display: flex;
+  flex-direction: column;
   width: 25%; }
+  @media (max-width: 1250px) {
+    .producats__vertical {
+      justify-content: center;
+      flex-direction: row;
+      width: 85%;
+      margin: 0 auto; } }
+  @media (max-width: 600px) {
+    .producats__vertical {
+      flex-direction: column;
+      width: 100%;
+      padding: 0 3rem; } }
 
 .product--vetical {
   margin-bottom: 2rem;

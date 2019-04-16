@@ -7,9 +7,28 @@
     background-color: #fff;
     margin-top: -12rem;
     padding: 4rem 0;
+
+
+      
+    @include for-phone-only {
+            
+        flex-direction: column;
+        padding: 2rem 0;
+    }
+
 }
 
 .how-its-work img {
     width: 8rem;
     height: 8rem;
+
+
+    @include for-phone-only {
+       
+        width: 6rem;
+        height: 6rem;
+        margin-bottom: 2rem;
+       
+    }
+
 }

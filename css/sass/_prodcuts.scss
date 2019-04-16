@@ -1,6 +1,15 @@
 
 .products {
     display: flex;
+    flex-wrap: wrap;
+    
+
+            
+    @include for-large-only {
+            
+        flex-direction: column;
+        padding: 2rem 0;
+    }
   
     i {
         color: #ffa500;
@@ -12,7 +21,16 @@
     width: 70%;
     display: flex;
     flex-direction: column;
-    margin-right: 1rem
+    margin-right: 1rem;
+
+    @include for-large-only {
+            
+        width: 100%;
+        padding: 2rem 0;
+
+    }
+
+
 }
 
 
@@ -20,14 +38,38 @@
 .products__row--one {
 
     display: flex;
+
+    @include for-large-only {
+            
+      justify-content: center;
+        
+    }
+
+    @include for-large-only {
+         flex-wrap: wrap;
+         padding: 0 3rem;
+      }
+
+   
+  
+   
+   
+
 }
 
 .product__row--2 {
 
     display: flex;
     padding: 2rem 1.3rem;
+    overflow: hidden;
+
+    @include for-phone-only {
+        margin: 1rem 0;
+        flex-direction: column;
+      }
 
     img {
+        width: 100%;
         max-height: 20rem;
     }
 }
@@ -35,19 +77,14 @@
 .prodcut__two--content {
 
     padding: 1.4rem;
-}
-
-
-.producats__vertical {
-
-    display: flex;
-    flex-direction: column;
-    width: 25%;
+    overflow: hidden;
 
 }
+
+
 
 .product {
-    padding: .5rem 1rem;
+    padding: 1rem 1rem;
     margin: 0 1rem;
     overflow: hidden;
     position: relative;
@@ -67,6 +104,7 @@
     }
 
     &--img {
+        width: 100%;
         margin: 0 auto;
         position: absolute;
         z-index: 9;
@@ -90,14 +128,44 @@
 
 
 .product--row--one {
+    min-width: 25%;
+
+    @include for-large-only {
+       margin: 1rem 0;
+     }
+
+}
+
+
+.producats__vertical {
+
+    display: flex;
+    flex-direction: column;
     width: 25%;
 
-   
+    @include for-large-only {
+     
+        justify-content: center;
+        flex-direction: row;
+        width: 85%;
+        margin: 0 auto;  
+      }
+
+
+      @include for-phone-only {
+     
+        flex-direction: column;
+        width: 100%;
+        padding: 0 3rem;
+      }
+
 }
 
 .product--vetical {
     margin-bottom: 2rem;
     padding: 2rem;
+
+    
 
     h4 {
         margin: 0;

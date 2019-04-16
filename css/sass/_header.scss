@@ -12,6 +12,11 @@
         width: 100%;
         transform: translateY(-50%);
         text-align: center;
+
+        @include for-phone-only {
+            transform: translateY(0);
+
+        }
     }
 
     &__title {
