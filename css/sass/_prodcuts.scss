@@ -3,7 +3,7 @@
     display: flex;
   
     i {
-        color: orange;
+        color: #ffa500;
         
     }
 }
@@ -83,7 +83,7 @@
     }
 
     p {
-       color: #fff;
+       color: $white;
        line-height: 1.4;
     }
 }
