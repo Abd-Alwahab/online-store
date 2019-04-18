@@ -40,15 +40,24 @@
     display: flex;
 
     @include for-large-only {
-            
       justify-content: center;
         
     }
 
-    @include for-large-only {
+    @include for-phone-only {
          flex-wrap: wrap;
-         padding: 0 3rem;
+         padding: 0 5rem;
+       
       }
+
+
+      @include for-only {
+       
+        & > div {
+            padding: .5rem;
+        }
+
+     }
 
    
   
@@ -66,6 +75,7 @@
     @include for-phone-only {
         margin: 1rem 0;
         flex-direction: column;
+        padding: 2rem 4rem;
       }
 
     img {
@@ -84,11 +94,13 @@
 
 
 .product {
+    
     padding: 1rem 1rem;
     margin: 0 1rem;
     overflow: hidden;
     position: relative;
     max-height: 23rem;
+
 
  
     &__content {
@@ -101,7 +113,13 @@
         
         font-size: 1.4rem;
         color: orange;
-    }
+
+        @include for-only {
+           font-size: 1.1rem;
+          
+         }
+   
+        }
 
     &--img {
         width: 100%;
@@ -123,6 +141,11 @@
     p {
        color: $white;
        line-height: 1.4;
+
+       @include for-only {
+
+        line-height: 1;
+      }
     }
 }
 
@@ -131,7 +154,7 @@
     min-width: 25%;
 
     @include for-large-only {
-       margin: 1rem 0;
+       margin: 1rem;
      }
 
 }
@@ -147,7 +170,7 @@
      
         justify-content: center;
         flex-direction: row;
-        width: 85%;
+        width: 100%;
         margin: 0 auto;  
       }
 
@@ -156,7 +179,8 @@
      
         flex-direction: column;
         width: 100%;
-        padding: 0 3rem;
+        padding: 0;
+        align-items: center;
       }
 
 }
@@ -164,6 +188,9 @@
 .product--vetical {
     margin-bottom: 2rem;
     padding: 2rem;
+
+    
+  
 
     
 
